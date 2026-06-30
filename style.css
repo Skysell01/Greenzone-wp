@@ -2,14 +2,22 @@
 
 /* CSS Variables */
 :root {
-    --primary: #0f5132;        /* Dark Forest Green */
-    --primary-light: #1e7048;  /* Vibrant Emerald */
-    --primary-bg: #f4faf6;     /* Soft Light Green Tint */
-    --accent: #ff9f1c;         /* Orange Alert/CTA */
-    --gold: #d4af37;           /* Warm Gold Premium Accent */
-    --danger: #dc3545;         /* Red Warning for Complications */
-    --dark: #0f172a;           /* Dark Charcoal for text/backgrounds */
-    --text-muted: #64748b;     /* Slate gray for secondary text */
+    --primary: #0f5132;
+    /* Dark Forest Green */
+    --primary-light: #1e7048;
+    /* Vibrant Emerald */
+    --primary-bg: #f4faf6;
+    /* Soft Light Green Tint */
+    --accent: #ff9f1c;
+    /* Orange Alert/CTA */
+    --gold: #d4af37;
+    /* Warm Gold Premium Accent */
+    --danger: #dc3545;
+    /* Red Warning for Complications */
+    --dark: #0f172a;
+    /* Dark Charcoal for text/backgrounds */
+    --text-muted: #64748b;
+    /* Slate gray for secondary text */
     --white: #ffffff;
     --border-radius-sm: 8px;
     --border-radius-md: 16px;
@@ -42,7 +50,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     font-weight: 700;
     line-height: 1.25;
@@ -97,26 +110,61 @@ img {
 
 /* Floating Animations */
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 @keyframes pulse-danger {
-    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4); }
-    70% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
-    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4);
+    }
+
+    70% {
+        transform: scale(1.02);
+        box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
 }
 
 @keyframes pulse-glow {
-    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 159, 28, 0.5); }
-    70% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(255, 159, 28, 0); }
-    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 159, 28, 0); }
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 159, 28, 0.5);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 12px rgba(255, 159, 28, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 159, 28, 0);
+    }
 }
 
 @keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
 }
 
 /* Primary Button Styling */
@@ -239,13 +287,33 @@ header.scrolled {
 }
 
 @keyframes phone-shake {
-    0% { transform: rotate(0); }
-    10% { transform: rotate(-15deg); }
-    20% { transform: rotate(15deg); }
-    30% { transform: rotate(-15deg); }
-    40% { transform: rotate(15deg); }
-    50% { transform: rotate(0); }
-    100% { transform: rotate(0); }
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(-15deg);
+    }
+
+    20% {
+        transform: rotate(15deg);
+    }
+
+    30% {
+        transform: rotate(-15deg);
+    }
+
+    40% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
 }
 
 /* Hero Section */
@@ -469,8 +537,13 @@ header.scrolled {
 }
 
 @keyframes ticker-move {
-    0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-50%, 0, 0); }
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
 }
 
 /* Symptoms Section */
@@ -750,7 +823,7 @@ header.scrolled {
 .doctor-card {
     background: var(--primary-bg);
     border-radius: var(--border-radius-lg);
-    padding: 60px;
+    padding: 40px;
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     gap: 60px;
@@ -892,8 +965,15 @@ header.scrolled {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .wizard-step h3 {
@@ -1247,7 +1327,8 @@ header.scrolled {
 footer {
     background-color: #0b140f;
     color: var(--white);
-    padding: 60px 0 100px 0; /* Extra bottom padding for floating bar */
+    padding: 60px 0 100px 0;
+    /* Extra bottom padding for floating bar */
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -1273,7 +1354,8 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer-address h4, .footer-hours h4 {
+.footer-address h4,
+.footer-hours h4 {
     font-size: 1.1rem;
     margin-bottom: 20px;
     color: var(--gold);
@@ -1411,7 +1493,8 @@ footer {
     font-size: 0.9rem;
 }
 
-.admin-table th, .admin-table td {
+.admin-table th,
+.admin-table td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -1480,6 +1563,7 @@ footer {
     .why-us-grid {
         grid-template-columns: 1fr 1fr;
     }
+
     .why-card:last-child {
         grid-column: span 2;
     }
@@ -1491,37 +1575,48 @@ footer {
         text-align: center;
         gap: 40px;
     }
+
     .hero-bullets {
         justify-content: center;
     }
+
     .hero-actions {
         justify-content: center;
     }
+
     .hero-trust {
         justify-content: center;
     }
+
     .floating-badge {
-        display: none; /* Hide floating badges on smaller tablets to keep layout clean */
+        display: none;
+        /* Hide floating badges on smaller tablets to keep layout clean */
     }
+
     .complications-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
     .complications-graphic {
         order: -1;
     }
+
     .doctor-card {
         grid-template-columns: 1fr;
         padding: 40px;
         gap: 30px;
     }
+
     .doctor-img-wrapper {
         max-width: 320px;
         margin: 0 auto;
     }
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
+
     .footer-brand {
         grid-column: span 2;
     }
@@ -1531,23 +1626,30 @@ footer {
     html {
         font-size: 15px;
     }
+
     .section-padding {
         padding: 60px 0;
     }
+
     .hero-content h1 {
         font-size: 2.3rem;
     }
+
     .why-us-grid {
         grid-template-columns: 1fr;
     }
+
     .why-card:last-child {
         grid-column: span 1;
     }
+
     .floating-bar {
         display: grid;
     }
+
     .nav-contact .btn {
-        display: none; /* Hide top header CTA button, phone link and WhatsApp will remain */
+        display: none;
+        /* Hide top header CTA button, phone link and WhatsApp will remain */
     }
 }
 
@@ -1555,23 +1657,29 @@ footer {
     .hero-bullets {
         grid-template-columns: 1fr;
     }
+
     .bullet-item {
         justify-content: center;
     }
+
     .hero-actions .btn {
         width: 100%;
     }
+
     .hero-trust {
         flex-direction: column;
         gap: 12px;
         align-items: center;
     }
+
     .wizard-steps {
         padding: 24px;
     }
+
     .footer-grid {
         grid-template-columns: 1fr;
     }
+
     .footer-brand {
         grid-column: span 1;
     }
